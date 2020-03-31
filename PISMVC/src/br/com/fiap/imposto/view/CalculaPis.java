@@ -57,6 +57,7 @@ public class CalculaPis implements Observer, TelaDeImposto {
     // O metodo update sera chamado pelo model notifyObservers()
     @Override
     public void update(Observable model, Object modelValue) {
+        System.out.println("Atualizando a view");
         String msg = model.getClass()
                 + " "
                 + model.toString()
